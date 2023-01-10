@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Public API</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-3 px-md-5">
+          <img
+            src="./assets/img/logo-search.png"
+            alt="logo search"
+            class="logo-brand"
+          />
+          <a class="navbar-brand fw-bold" href="#">API Search</a>
+          <button
+            class="navbar-toggler btn btn-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item pe-3">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Accueil</a
+                >
+              </li> -->
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="#random-api">Random Api</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#category-api">Catégorie</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="carouselFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="true"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/img-1.webp"
+              class="d-block w-100"
+              alt="img-1"
+            />
+            <div class="container carousel-content text-center">
+              <h1 class="fw-bolder">API Search</h1>
+              <p class="">
+                Pourquoi payer pour des API quand vous pouvez en avoir
+                gratuitement ?
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item text-center text-md-start">
+            <img
+              src="./assets/img/img-2.webp"
+              class="d-block w-100"
+              alt="img-1"
+            />
+            <div class="container carousel-content text-center">
+              <h1 class="">API Search</h1>
+              <p class="">
+                Améliorez votre créativité avec nos API gratuites de qualité
+                supérieure
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/img-3.webp"
+              class="d-block w-100"
+              alt="img-1"
+            />
+            <div class="container carousel-content text-center">
+              <h1>API Search</h1>
+              <p class="">
+                Faites décoller votre projet avec des API gratuites de qualité
+                supérieure
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="icon-scroll"></div>
+    </header>
+    <main>
+      <div class="container px-4">
+        <section class="section-intro">
+          <div class="row">
+            <div
+              class="wrapper-left col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start pe-0 pe-md-5"
+            >
+              <h2 class="mb-5">Pourquoi API SEARCH ?</h2>
+
+              <p>
+                Vous cherchez une API publique de qualité supérieure ? Vous êtes
+                au bon endroit !
+              </p>
+              <p>
+                Et n'oubliez pas, utiliser l'API publique c'est comme conduire
+                une voiture : c'est facile une fois que vous avez compris
+                comment ça marche. Alors mettez votre ceinture de sécurité API
+                et c'est parti pour l'aventure !
+              </p>
+            </div>
+            <div
+              class="wrapper-right col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end pt-5 pt-lg-0"
+            >
+              <div class="wrapper-img">
+                <img src="./assets/img/illustration-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-random-api" id="random-api">
+          <div class="row">
+            <div
+              class="wrapper-left col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start pt-0 order-lg-0 order-2"
+            >
+              <div class="wrapper-img">
+                <img src="./assets/img/illustration-2.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="wrapper-right col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start ps-0 ps-lg-5 order-lg-1 order-0"
+            >
+              <h2 class="mb-5">Une API aléatoire ?</h2>
+
+              <p>
+                Vous êtes à la recherche d'une API aléatoire qui pourrait vous
+                surprendre ? Alors cliquez sur le bouton "Recherche" pour en
+                savoir plus ! Cette API pourrait être la solution idéale pour
+                votre projet de développement.
+              </p>
+
+              <p />
+              Que vous soyez débutant ou expérimenté, cette API est facile à
+              utiliser et vous offre de nombreuses possibilités.
+              <p>
+                Ne ratez pas cette opportunité de découvrir quelque chose de
+                nouveau et d'innovant.
+              </p>
+              <button
+                class="btn btn-outline-dark text-white px-4 mt-3"
+                id="btn-random-search"
+              >
+                Rechercher
+              </button>
+            </div>
+            <div
+              class="wrapper col-12 d-flex justify-content-center pt-5 order-0 order-lg-2"
+            >
+              <div class="random-api-result">
+                <div id="random-item"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-category" id="category-api">
+          <div class="row">
+            <div
+              class="wrapper-left col-12 col-lg-6 d-flex flex-column justify-content-center align-items-lg-start pe-0 pe-lg-5"
+            >
+              <h2 class="mb-5">Besoin d'une API spécifique ?</h2>
+
+              <p>
+                Vous avez besoin d'une API spécifique pour votre projet de
+                développement ?
+              </p>
+              <p>
+                Ne cherchez pas plus loin ! Notre base de données regorge d'API
+                de toutes sortes, pour répondre à tous les besoins. Que vous
+                cherchiez une API de géolocalisation, de traduction, de paiement
+                en ligne, ou toute autre fonctionnalité, nous avons ce qu'il
+                vous faut.
+              </p>
+              <p>
+                Parcourez notre catalogue et trouvez l'API qui convient le mieux
+                à votre projet.
+              </p>
+              <div class="input-group my-3">
+                <label
+                  class="input-group-text bg-dark text-white"
+                  for="inputGroupSelect01"
+                  >Catégorie</label
+                >
+                <select
+                  class="form-select input-select-category"
+                  id="inputGroupSelect"
+                >
+                  <option selected>Selectionnez une catégorie...</option>
+                </select>
+              </div>
+              <!-- <button
+                class="btn btn-outline-dark text-white px-4 mt-3"
+                id="btn-categ-search"
+              >
+                Rechercher
+              </button> -->
+            </div>
+            <div
+              class="wrapper-right col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end pt-5 pt-lg-0"
+            >
+              <div class="wrapper-img">
+                <!-- <img src="./assets/img/coaching-SEO.png" alt="" class="ps-3" /> -->
+                <img src="./assets/img/illustration-3.png" alt="" />
+              </div>
+            </div>
+            <div class="wrapper col-12 d-flex justify-content-between pt-5">
+              <div class="category-result-list w-100">
+                <div
+                  id="category-result-item"
+                  class="d-flex align-content-start justify-content-center justify-content-md-between flex-wrap g-5 w-100"
+                ></div>
+                <nav aria-label="Page navigation example" class="mt-5">
+                  <ul class="pagination justify-content-center"></ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>@ABBA-DEV - 01/2023 - ANNECY</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
